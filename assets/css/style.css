@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --headingColor: #1c1e21;
+  --textColor: #606770;
+  --buttonColor: #00a400;
+  --outlineColor: red;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--textColor);
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.row.row-between {
+  justify-content: space-between;
+}
+
+.app {
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+#main {
+  max-inline-size: 1280px;
+  block-size: 100vh;
+  margin: 0 auto;
+  display: grid;
+  place-content: center;
+  background-color: #f8f9fd;
+}
+
+table {
+  inline-size: 1000px;
+  background-color: #fff;
+  border-collapse: collapse;
+}
+
+.table__name img {
+  inline-size: 36px;
+  block-size: 36px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+thead {
+  border-bottom: 6px solid #f8f9fd;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+tbody {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+tr {
+  block-size: 80px;
+}
+
+tbody tr {
+  block-size: 100px;
+  border-bottom: 3px solid #f8f9fd;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px;
+}
+
+th {
+  text-align: left;
+  font-weight: 400;
+}
+
+.table__list {
+  background-color: #e5e5e5;
+  inline-size: 16px;
+  block-size: 16px;
+  border-radius: 4px;
+  margin-left: 24px;
+}
+
+.status {
+  block-size: 100%;
+}
+
+span.inf__main {
+  color: rgba(0, 0, 0, 0.848);
+  font-weight: 500;
+}
+
+.status--text {
+  padding: 2px 6px;
+  border-radius: 20px;
+  color: rgb(255, 98, 0);
+  background-color: rgba(255, 166, 0, 0.266);
+}
+
+.status--text__square {
+  inline-size: 12px;
+  block-size: 12px;
+  border-radius: 50%;
+  background-color: rgb(255, 98, 0);
+  margin-right: 8px;
+}
+
+.status__close {
+  color: #f6c9ce;
+  font-size: 16px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.thead__div {
+  background-color: red;
+}
+
+.inf__note {
+  font-size: 1.2rem;
+}
